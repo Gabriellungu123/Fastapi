@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.plato {
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.plato:hover {
+    transform: scale(1.05);
+}
+
+.plato img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.plato p {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Formulario de contacto */
+form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #4caf50;
+    color: white;
+    font-size: 0.9rem;
+}
+/* Fondo diferente para cada sección */
+body.entrantes {
+    background-color: #f9f3c4; /* Amarillo suave */
+}
+body.platos-principales {
+    background-color: #f4d03f; /* Amarillo oscuro */
+}
+body.postres {
+    background-color: #f7cac9; /* Rosa pastel */
+}
+body.contacto {
+    background-color: #d5f5e3; /* Verde claro */
+}

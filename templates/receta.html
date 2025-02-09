@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ plato.nombre }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            background-color: #f8f1e5; /* Color crema para recetas */
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .plato-img {
+            width: 50%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .ingredientes, .preparacion {
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ plato.nombre }}</h1>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/entrantes">Entrantes</a>
+            <a href="/platos_principales">Platos Principales</a>
+            <a href="/postres">Postres</a>
+            <a href="/contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <img src="{{ plato.imagen }}" alt="{{ plato.nombre }}" class="plato-img">
+        
+        <h2>Ingredientes</h2>
+        <ul class="ingredientes">
+            {% for ingrediente in plato.ingredientes %}
+            <li>{{ ingrediente }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Preparación</h2>
+        <p class="preparacion">{{ plato.preparacion }}</p>
+    </main>
+</body>
+</html>
