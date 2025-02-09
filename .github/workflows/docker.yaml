@@ -54,6 +54,6 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: | 
-             ${{ secrets.REGISTRY_USERNAME }}/fastapi:latest
-             ${{ secrets.REGISTRY_USERNAME }}/fastapi:${{ env.VERSION }}
+             ${{ secrets.REGISTRY_USERNAME }}/Fastapi:latest
+             ${{ secrets.REGISTRY_USERNAME }}/Fastapi:${{ env.VERSION }}
             
