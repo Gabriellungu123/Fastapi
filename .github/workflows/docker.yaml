@@ -54,6 +54,6 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: | 
-             ${{ secrets.REGISTRY_USERNAME }}/mi_pagina:latest
-             ${{ secrets.REGISTRY_USERNAME }}/mi_pagina:${{ env.VERSION }}
+             ${{ secrets.REGISTRY_USERNAME }}/webe-pro:latest
+             ${{ secrets.REGISTRY_USERNAME }}/webe-pro:${{ env.VERSION }}
             
