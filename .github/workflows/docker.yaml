@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
 env:
-  VERSION: 4.0
+  VERSION: 5.0
 
 jobs:
   # unit-tests:
